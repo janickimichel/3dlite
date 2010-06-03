@@ -1,0 +1,86 @@
+<Vector>
+    <!-- 0 big asteroid -->
+    <Element>
+        <String></String>
+    </Element>
+    <!-- 1 big saucer -->
+    <Element>
+        <String></String>
+    </Element>
+    <!-- 2 bird -->
+    <Element>
+        <String></String>
+    </Element>
+    <!-- 3 bullet -->
+    <Element>
+        <String></String>
+    </Element>
+    <!-- 4 evil player/fighter -->
+    <Element>
+        <String></String>
+    </Element>
+    <!-- 5 fragment-->
+    <Element>
+        <String></String>
+    </Element>
+    <!-- 6 laser beam -->
+    <Element>
+        <String>/laser.png</String>
+    </Element>
+    <!-- 7 laser turret -->
+    <Element>
+        <String></String>
+    </Element>
+    <!-- 8 medium asteroid -->
+    <Element>
+        <String></String>
+    </Element>
+    <!-- 9 mining laser beam -->
+    <Element>
+        <String>/mining_laser.png</String>
+    </Element>
+    <!-- 10 missile -->
+    <Element>
+        <String>/missile.png</String>
+    </Element>
+    <!-- 11 missile turret -->
+    <Element>
+        <String></String>
+    </Element>
+    <!-- 12 player -->
+    <Element>
+        <String>/player.png</String>
+    </Element>
+    <!-- 13 rookery -->
+    <Element>
+        <String></String>
+    </Element>
+    <!-- 14 saucer-->
+    <Element>
+        <String></String>
+    </Element>
+    <!-- 15 small asteroid -->
+    <Element>
+        <String></String>
+    </Element>
+    <!-- 16 twin laser -->
+    <Element>
+        <String>/twin_laser.png</String>
+    </Element>
+    <!-- 17 laser cannon upgrade -->
+    <Element>
+        <String></String>
+    </Element>
+    <!-- 18 mining laser upgrade-->
+    <Element>
+        <String></String>
+    </Element>
+    <!-- 19 twin laser upgrade-->
+    <Element>
+        <String></String>
+    </Element>
+    <!-- 20 capture ray -->
+    <Element>
+        <String></String>
+    </Element>
+</Vector>

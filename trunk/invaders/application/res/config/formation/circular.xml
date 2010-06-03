@@ -1,0 +1,6 @@
+<CircularFormation>
+    <Speed><Fixed>1</Fixed></Speed>
+    <CenterX><Fixed>0</Fixed></CenterX>
+    <CenterZ><Fixed>-2800</Fixed></CenterZ>
+    <Radius><Fixed>1200</Fixed></Radius>
+</CircularFormation>

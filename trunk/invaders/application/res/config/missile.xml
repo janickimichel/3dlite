@@ -1,0 +1,9 @@
+<Ship health="1" typeId="10">
+    <Speed><Fixed>300</Fixed></Speed>
+    <Shape>
+        <_ref map="shape.missile_mesh"/>
+    </Shape>
+    <Controller>
+        <_ref map="controller.missile"/>
+    </Controller>
+</Ship>

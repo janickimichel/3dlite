@@ -1,0 +1,77 @@
+<Composite>
+    <Shape>
+        <!-- wing -->
+        <AnimatedMesh color="#FF00FF">
+            <Animation>
+                <FlapAnimation>
+                    <MaxRotationAngle><Fixed>70</Fixed></MaxRotationAngle>
+                    <MinRotationAngle><Fixed>-45</Fixed></MinRotationAngle>
+                    <RotationIncrement><Fixed>10</Fixed></RotationIncrement>
+                </FlapAnimation>
+            </Animation>
+            <Point> <!-- 0 -->
+                <Point x="-120" y="0" z="-20"/>
+            </Point>
+            <Point> <!-- 1 -->
+                <Point x="0" y="0" z="0"/>
+            </Point>
+            <Point> <!-- 2 -->
+                <Point x="-50" y="0" z="40"/>
+            </Point>
+            <!--
+            <Face>
+                <Face>
+                    <Index><Byte>0</Byte></Index>
+                    <Index><Byte>1</Byte></Index>
+                    <Index><Byte>2</Byte></Index>
+                </Face>
+            </Face>
+            <Face>
+                <Face>
+                    <Index><Byte>2</Byte></Index>
+                    <Index><Byte>1</Byte></Index>
+                    <Index><Byte>0</Byte></Index>
+                </Face>
+            </Face>
+            -->
+        </AnimatedMesh>
+    </Shape>
+    <Shape>
+        <!-- wing -->
+        <AnimatedMesh color="#FF00FF">
+            <Animation>
+                <FlapAnimation>
+                    <MaxRotationAngle><Fixed>45</Fixed></MaxRotationAngle>
+                    <MinRotationAngle><Fixed>-70</Fixed></MinRotationAngle>
+                    <RotationIncrement><Fixed>-10</Fixed></RotationIncrement>
+                </FlapAnimation>
+            </Animation>
+
+            <Point> <!-- 0 -->
+                <Point x="120" y="0" z="-20"/>
+            </Point>
+            <Point> <!-- 1 -->
+                <Point x="0" y="0" z="0"/>
+            </Point>
+            <Point> <!-- 2 -->
+                <Point x="50" y="0" z="40"/>
+            </Point>
+            <!--
+            <Face>
+                <Face>
+                    <Index><Byte>0</Byte></Index>
+                    <Index><Byte>1</Byte></Index>
+                    <Index><Byte>2</Byte></Index>
+                </Face>
+            </Face>
+            <Face>
+                <Face>
+                    <Index><Byte>2</Byte></Index>
+                    <Index><Byte>1</Byte></Index>
+                    <Index><Byte>0</Byte></Index>
+                </Face>
+            </Face>
+            -->
+        </AnimatedMesh>
+    </Shape>
+</Composite>

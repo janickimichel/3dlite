@@ -1,0 +1,7 @@
+<SpreadWeapon maxUpgrades="7" cost="1" upgradeTypeId="-1">
+    <Projectile>
+        <_ref map="bullet"/>
+    </Projectile>
+    <TimeBetweenShots><Fixed>20</Fixed></TimeBetweenShots>
+    <SpreadAngle><Fixed>8</Fixed></SpreadAngle>
+</SpreadWeapon>

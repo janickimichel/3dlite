@@ -1,0 +1,80 @@
+<project name="j2me space invaders" default="run1.0" basedir=".">
+
+    <!--
+    <property name="wtk.home" value="c:\bin\WTK21"/>
+    <property name="wtk.midp.version" value="2.0"/>
+    -->
+
+    <property name="wtk.home" value="c:\WTK2.5.2"/>
+    <property name="wtk.midp.version" value="1.0"/>
+
+    <property file="build.external.properties"/>
+    <property file="build.internal.properties"/>
+    <property file="../../invaders/core/build.external.properties"/>
+    <property file="../../common/math/build.external.properties"/>
+    <property file="../../common/domain/build.external.properties"/>
+    <property file="../../common/shape3d/build.external.properties"/>
+    <property file="../../client/core/build.external.properties"/>
+
+    <taskdef name="wtkjad" classname="de.pleumann.antenna.WtkJad"/>
+    <taskdef name="wtkbuild" classname="de.pleumann.antenna.WtkBuild"/>
+    <taskdef name="wtkpackage" classname="de.pleumann.antenna.WtkPackage"/>
+    <taskdef name="wtkrun" classname="de.pleumann.antenna.WtkRun"/>
+    <taskdef name="wtkpreverify" classname="de.pleumann.antenna.WtkPreverify"/>
+
+    <target name="init">
+        <tstamp/>
+        <mkdir dir="${work.dist}"/>
+        <mkdir dir="${work.classes}"/>
+    </target>
+
+    <target name="clean">
+        <delete dir="${work.dist}"/>
+        <delete dir="${work.classes}"/>
+    </target>
+
+    <target name="compile1.0" depends="init">
+        <!-- preverify the wtk classes into being useful -->
+        <wtkpreverify srcdir="${mathfp.classpath}" destdir="${work.classes}"/>
+        <wtkbuild destdir="${work.classes}" debug="off" preverify="true" source="1.3" target="1.1">
+            <src path="${src}"/>
+            <src path="${invaders.core.src}"/>
+            <src path="${common.math.src}"/>
+            <src path="${common.domain.src}"/>
+            <src path="${common.shape.src}"/>
+            <src path="${client.core.src}"/>
+            <classpath>
+                <pathelement location="${midpapi.classpath}"/>
+                <pathelement location="${mathfp.classpath}"/>
+            </classpath>
+        </wtkbuild>
+    </target>
+
+    <target name="deploy1.0" depends="compile1.0,generate_levels">
+
+        <wtkjad jadfile="${work.dist.jad}" name="Space Invaders 3D" vendor="Zonski" version="0.1">
+            <midlet name="Space Invaders 3D" class="au.com.zonski.space.invaders.j2me.J2MEInvaders"/>
+            <!--
+            <attribute name="screen.height" value="80"/>
+            -->
+        </wtkjad>
+        <wtkpackage jarfile="${work.dist.jar}" jadfile="${work.dist.jad}">
+            <fileset dir="res" includes="**/*.png"
+                excludes="**/.xvpics/**"/>
+            <!--
+            <fileset dir="${work.classes}"/>
+            -->
+            <fileset dir="${work.classes}"/>
+            <fileset dir="${invaders.j2me.config}"/>
+        </wtkpackage>
+    </target>
+
+    <target name="generate_levels">
+        <ant antfile="..\..\invaders\converter\build.xml" target="run" inheritall="false"/>
+    </target>
+
+    <target name="run1.0" depends="deploy1.0">
+        <wtkrun jadfile="${work.dist.jad}"/>
+    </target>
+
+</project>

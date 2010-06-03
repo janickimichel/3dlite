@@ -1,0 +1,12 @@
+<Ship health="1" typeId="18">
+    <Speed><Fixed>50</Fixed></Speed>
+    <Shape>
+        <_ref map="shape.missile_launcher_upgrade_mesh"/>
+    </Shape>
+    <Weapon>
+        <_ref map="weapon.missile_launcher"/>
+    </Weapon>
+    <Controller>
+        <_ref map="controller.upgrade"/>
+    </Controller>
+</Ship>

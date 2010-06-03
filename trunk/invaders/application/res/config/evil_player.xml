@@ -1,0 +1,30 @@
+<Ship health="1" typeId="4">
+    <Speed><Fixed>35</Fixed></Speed>
+    <Shape>
+
+        <_ref map="shape.evil_player_mesh"/>
+        <!--
+        <_ref map="shape.missile_mesh"/>
+        -->
+    </Shape>
+    <Weapon>
+        <!--
+        <_ref map="weapon.shot_gun"/>
+        -->
+
+        <_ref map="weapon.twin_laser_cannon"/>
+
+        <!--
+        <_ref map="weapon.mining_laser_cannon"/>
+        -->
+        <!--
+        <_ref map="weapon.laser_cannon"/>
+        -->
+        <!--
+        <_ref map="weapon.missile_launcher"/>
+        -->
+    </Weapon>
+    <Controller>
+        <_ref map="controller.fighter"/>
+    </Controller>
+</Ship>

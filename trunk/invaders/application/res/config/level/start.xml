@@ -1,0 +1,110 @@
+<Level name="Welcome!!" numberOfSides="3" nextLevelId="level.small1" maxActive="1">
+    <Height><Fixed>5000</Fixed></Height>
+    <Width><Fixed>5000</Fixed></Width>
+    <Formation>
+        <_ref map="formation.threecircle"/>
+    </Formation>
+    <Body>
+        <_ref map="rookery"/>
+        <Byte>2</Byte>
+        <Fixed>-300</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+
+    <Body>
+        <_ref map="saucer"/>
+        <Byte>2</Byte>
+        <Fixed>100</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+    <Body>
+        <_ref map="saucer"/>
+        <Byte>2</Byte>
+        <Fixed>500</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+    <Body>
+        <_ref map="saucer"/>
+        <Byte>2</Byte>
+        <Fixed>-1100</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+    <Body>
+        <_ref map="saucer"/>
+        <Byte>2</Byte>
+        <Fixed>-700</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+
+    <Body>
+        <_ref map="bird"/>
+        <Byte>2</Byte>
+        <Fixed>-900</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+
+    <Body>
+        <_ref map="evil_player"/>
+        <Byte>2</Byte>
+        <Fixed>1100</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+
+    <Body>
+        <_ref map="bird"/>
+        <Byte>2</Byte>
+        <Fixed>-500</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+
+    <Body>
+        <_ref map="evil_player"/>
+        <Byte>2</Byte>
+        <Fixed>-100</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+    <Body>
+        <_ref map="bird"/>
+        <Byte>2</Byte>
+        <Fixed>300</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+
+    <Body>
+        <_ref map="evil_player"/>
+        <Byte>2</Byte>
+        <Fixed>700</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+
+    <Body>
+        <_ref map="missile_turret"/>
+        <Byte>2</Byte>
+        <Fixed>900</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+</Level>

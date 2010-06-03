@@ -1,0 +1,7 @@
+<SpreadWeapon maxUpgrades="7" cost="1" upgradeTypeId="1">
+    <Projectile>
+        <_ref map="laser_beam"/>
+    </Projectile>
+    <TimeBetweenShots><Fixed>25</Fixed></TimeBetweenShots>
+    <SpreadAngle><Fixed>4</Fixed></SpreadAngle>
+</SpreadWeapon>

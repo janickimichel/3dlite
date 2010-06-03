@@ -1,0 +1,12 @@
+<Ship health="1" typeId="14">
+    <Speed><Fixed>30</Fixed></Speed>
+    <Shape>
+        <_ref map="shape.saucer_mesh"/>
+    </Shape>
+    <Weapon>
+        <_ref map="weapon.laser_cannon"/>
+    </Weapon>
+    <Controller>
+        <_ref map="controller.twit"/>
+    </Controller>
+</Ship>

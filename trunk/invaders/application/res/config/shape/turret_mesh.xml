@@ -1,0 +1,266 @@
+<Composite>
+    <Shape>
+        <!-- base -->
+        <Mesh color="#8888FF">
+            <!-- top -->
+            <Point> <!-- 0 -->
+                <Point x="75" y="0" z="-130"/>
+            </Point>
+            <Point> <!-- 1 -->
+                <Point x="-75" y="0" z="-130"/>
+            </Point>
+            <Point> <!-- 2 -->
+                <Point x="-150" y="0" z="0"/>
+            </Point>
+            <Point> <!-- 3 -->
+                <Point x="-75" y="0" z="130"/>
+            </Point>
+            <Point> <!-- 4 -->
+                <Point x="75" y="0" z="130"/>
+            </Point>
+            <Point> <!-- 5 -->
+                <Point x="150" y="0" z="0"/>
+            </Point>
+            <!-- center point-->
+            <!-- base -->
+            <Point> <!-- 6 -->
+                <Point x="0" y="-200" z="0"/>
+            </Point>
+
+            <Face>
+                <!-- top -->
+                <Face>
+                    <Index><Byte>0</Byte></Index>
+                    <Index><Byte>1</Byte></Index>
+                    <Index><Byte>2</Byte></Index>
+                    <Index><Byte>3</Byte></Index>
+                    <Index><Byte>4</Byte></Index>
+                    <Index><Byte>5</Byte></Index>
+                </Face>
+            </Face>
+            <Face>
+                <!-- side -->
+                <Face>
+                    <Index><Byte>1</Byte></Index>
+                    <Index><Byte>0</Byte></Index>
+                    <Index><Byte>6</Byte></Index>
+                </Face>
+            </Face>
+            <Face>
+                <!-- side -->
+                <Face>
+                    <Index><Byte>2</Byte></Index>
+                    <Index><Byte>1</Byte></Index>
+                    <Index><Byte>6</Byte></Index>
+                </Face>
+            </Face>
+            <Face>
+                <!-- side -->
+                <Face>
+                    <Index><Byte>3</Byte></Index>
+                    <Index><Byte>2</Byte></Index>
+                    <Index><Byte>6</Byte></Index>
+                </Face>
+            </Face>
+            <Face>
+                <!-- side -->
+                <Face>
+                    <Index><Byte>4</Byte></Index>
+                    <Index><Byte>3</Byte></Index>
+                    <Index><Byte>6</Byte></Index>
+                </Face>
+            </Face>
+            <Face>
+                <!-- side -->
+                <Face>
+                    <Index><Byte>5</Byte></Index>
+                    <Index><Byte>4</Byte></Index>
+                    <Index><Byte>6</Byte></Index>
+                </Face>
+            </Face>
+            <Face>
+                <!-- side -->
+                <Face>
+                    <Index><Byte>0</Byte></Index>
+                    <Index><Byte>5</Byte></Index>
+                    <Index><Byte>6</Byte></Index>
+                </Face>
+            </Face>
+        </Mesh>
+    </Shape>
+    <Shape>
+        <!-- cannon -->
+        <Mesh color="#8888FF">
+            <!-- top -->
+            <Point> <!-- 0 -->
+                <Point x="-5" y="20" z="-38"/>
+            </Point>
+            <Point> <!-- 1 -->
+                <Point x="5" y="20" z="-38"/>
+            </Point>
+            <Point> <!-- 2 -->
+                <Point x="0" y="15" z="-40"/>
+            </Point>
+            <Point> <!-- 3 -->
+                <Point x="-5" y="20" z="-100"/>
+            </Point>
+            <Point> <!-- 4 -->
+                <Point x="5" y="20" z="-100"/>
+            </Point>
+            <!-- center point -->
+            <Point> <!-- 5 -->
+                <Point x="0" y="15" z="-100"/>
+            </Point>
+            <!--
+            <Face>
+                top
+                <Face>
+                    <Index><Byte>0</Byte></Index>
+                    <Index><Byte>1</Byte></Index>
+                    <Index><Byte>4</Byte></Index>
+                    <Index><Byte>3</Byte></Index>
+                </Face>
+            </Face>
+            <Face>
+                side
+                <Face>
+                    <Index><Byte>1</Byte></Index>
+                    <Index><Byte>2</Byte></Index>
+                    <Index><Byte>5</Byte></Index>
+                    <Index><Byte>4</Byte></Index>
+                </Face>
+            </Face>
+            <Face>
+                side
+                <Face>
+                    <Index><Byte>2</Byte></Index>
+                    <Index><Byte>0</Byte></Index>
+                    <Index><Byte>3</Byte></Index>
+                    <Index><Byte>5</Byte></Index>
+                </Face>
+            </Face>
+            <Face>
+                end
+                <Face>
+                    <Index><Byte>3</Byte></Index>
+                    <Index><Byte>4</Byte></Index>
+                    <Index><Byte>5</Byte></Index>
+                </Face>
+            </Face>
+            -->
+        </Mesh>
+    </Shape>
+    <Shape>
+        <!-- head -->
+        <Mesh color="#8888FF">
+            <!-- top -->
+            <Point> <!-- 0 -->
+                <Point x="20" y="30" z="-35"/>
+            </Point>
+            <Point> <!-- 1 -->
+                <Point x="-20" y="30" z="-35"/>
+            </Point>
+            <Point> <!-- 2 -->
+                <Point x="-40" y="30" z="0"/>
+            </Point>
+            <Point> <!-- 3 -->
+                <Point x="-20" y="30" z="35"/>
+            </Point>
+            <Point> <!-- 4 -->
+                <Point x="20" y="30" z="35"/>
+            </Point>
+            <Point> <!-- 5 -->
+                <Point x="40" y="30" z="0"/>
+            </Point>
+            <!-- base -->
+            <Point> <!-- 6 -->
+                <Point x="25" y="0" z="-43"/>
+            </Point>
+            <Point> <!-- 7 -->
+                <Point x="-25" y="0" z="-43"/>
+            </Point>
+            <Point> <!-- 8 -->
+                <Point x="-50" y="0" z="0"/>
+            </Point>
+            <Point> <!-- 9 -->
+                <Point x="-25" y="0" z="43"/>
+            </Point>
+            <Point> <!-- 10 -->
+                <Point x="25" y="0" z="43"/>
+            </Point>
+            <Point> <!-- 11 -->
+                <Point x="50" y="0" z="0"/>
+            </Point>
+            <!-- center point : unused -->
+            <Point>
+                <Point x="0" y="20" z="0"/>
+            </Point>
+            <Face>
+                <!-- top -->
+                <Face>
+                    <Index><Byte>0</Byte></Index>
+                    <Index><Byte>1</Byte></Index>
+                    <Index><Byte>2</Byte></Index>
+                    <Index><Byte>3</Byte></Index>
+                    <Index><Byte>4</Byte></Index>
+                    <Index><Byte>5</Byte></Index>
+                </Face>
+            </Face>
+            <Face>
+                <!-- side -->
+                <Face>
+                    <Index><Byte>6</Byte></Index>
+                    <Index><Byte>7</Byte></Index>
+                    <Index><Byte>1</Byte></Index>
+                    <Index><Byte>0</Byte></Index>
+                </Face>
+            </Face>
+            <Face>
+                <!-- side -->
+                <Face>
+                    <Index><Byte>7</Byte></Index>
+                    <Index><Byte>8</Byte></Index>
+                    <Index><Byte>2</Byte></Index>
+                    <Index><Byte>1</Byte></Index>
+                </Face>
+            </Face>
+            <Face>
+                <!-- side -->
+                <Face>
+                    <Index><Byte>8</Byte></Index>
+                    <Index><Byte>9</Byte></Index>
+                    <Index><Byte>3</Byte></Index>
+                    <Index><Byte>2</Byte></Index>
+                </Face>
+            </Face>
+            <Face>
+                <!-- side -->
+                <Face>
+                    <Index><Byte>9</Byte></Index>
+                    <Index><Byte>10</Byte></Index>
+                    <Index><Byte>4</Byte></Index>
+                    <Index><Byte>3</Byte></Index>
+                </Face>
+            </Face>
+            <Face>
+                <!-- side -->
+                <Face>
+                    <Index><Byte>10</Byte></Index>
+                    <Index><Byte>11</Byte></Index>
+                    <Index><Byte>5</Byte></Index>
+                    <Index><Byte>4</Byte></Index>
+                </Face>
+            </Face>
+            <Face>
+                <!-- side -->
+                <Face>
+                    <Index><Byte>11</Byte></Index>
+                    <Index><Byte>6</Byte></Index>
+                    <Index><Byte>0</Byte></Index>
+                    <Index><Byte>5</Byte></Index>
+                </Face>
+            </Face>
+        </Mesh>
+    </Shape>
+
+</Composite>

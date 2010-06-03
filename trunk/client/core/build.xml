@@ -1,0 +1,50 @@
+<project name="core-client" default="dist" basedir=".">
+    <description>utility classes for clients</description>
+
+    <property file="build.external.properties"/>
+    <property file="build.internal.properties"/>
+    <property file="..\..\global.properties"/>
+    <property file="..\..\common\math\build.external.properties"/>
+    <property file="..\..\common\shape3d\build.external.properties"/>
+    <property file="..\..\common\domain\build.external.properties"/>
+
+    <target name="init">
+        <mkdir dir="${work.classes}"/>
+        <mkdir dir="${work.dist}"/>
+    </target>
+
+    <target name="clean" depends="clean-subprojects">
+        <delete dir="${work.classes}"/>
+        <delete dir="${work.dist}"/>
+    </target>
+
+    <target name="clean-subprojects">
+        <ant antfile="..\..\common\math\build.xml" target="clean" inheritall="false"/>
+        <ant antfile="..\..\common\shape3d\build.xml" target="clean" inheritall="false"/>
+        <ant antfile="..\..\common\domain\build.xml" target="clean" inheritall="false"/>
+    </target>
+
+    <target name="compile" depends="dist-subprojects,init">
+        <javac srcdir="${src}" destdir="${work.classes}" debug="${debug}" debuglevel="${debug.level}">
+            <classpath>
+                <pathelement path="${mathfp.classpath}"/>
+                <pathelement path="${common.math.jar}"/>
+                <pathelement path="${common.shape.jar}"/>
+                <pathelement path="${common.domain.jar}"/>
+            </classpath>
+        </javac>
+    </target>
+
+    <target name="dist-subprojects">
+        <ant antfile="..\..\common\math\build.xml" target="dist" inheritall="false"/>
+        <ant antfile="..\..\common\shape3d\build.xml" target="dist" inheritall="false"/>
+        <ant antfile="..\..\common\domain\build.xml" target="dist" inheritall="false"/>
+    </target>
+
+    <target name="dist" depends="compile">
+        <jar jarfile="${work.dist.jar}">
+            <fileset dir="${work.classes}"/>
+        </jar>
+    </target>
+
+</project>

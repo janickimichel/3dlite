@@ -1,0 +1,40 @@
+<project name="domain-common" default="dist" basedir=".">
+    <description>build file for common domain classes</description>
+
+    <property file="build.external.properties"/>
+    <property file="build.internal.properties"/>
+    <property file="..\..\global.properties"/>
+    <property file="..\..\common\shape3d\build.external.properties"/>
+
+    <target name="init">
+        <mkdir dir="${work.classes}"/>
+        <mkdir dir="${work.dist}"/>
+    </target>
+
+    <target name="clean" depends="clean-subprojects">
+        <delete dir="${work.classes}"/>
+        <delete dir="${work.dist}"/>
+    </target>
+
+    <target name="clean-subprojects">
+        <ant antfile="..\..\common\shape3d\build.xml" target="clean" inheritall="false"/>
+    </target>
+
+    <target name="compile" depends="init,compile-subprojects">
+        <javac srcdir="${src}" destdir="${work.classes}" debug="${debug}" debuglevel="${debug.level}">
+            <classpath>
+                <pathelement path="${common.shape.jar}"/>
+            </classpath>
+        </javac>
+    </target>
+
+    <target name="compile-subprojects">
+        <ant antfile="..\..\common\shape3d\build.xml" target="compile" inheritall="false"/>
+    </target>
+
+    <target name="dist" depends="compile">
+        <jar jarfile="${work.dist.jar}">
+            <fileset dir="${work.classes}"/>
+        </jar>
+    </target>
+</project>

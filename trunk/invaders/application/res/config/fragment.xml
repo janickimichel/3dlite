@@ -1,0 +1,9 @@
+<Ship health="1" typeId="0">
+    <Speed><Fixed>120</Fixed></Speed>
+    <Shape>
+        <_ref map="shape.fragment_mesh"/>
+    </Shape>
+    <Controller>
+        <_ref map="controller.fragment"/>
+    </Controller>
+</Ship>

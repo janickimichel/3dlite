@@ -1,0 +1,272 @@
+<Index>
+    <!-- configurer for strings and other semi-primitives -->
+    <Configurer
+        name="String"
+        class="au.com.zonski.config.xml.XMLStringConfigurer"/>
+    <Configurer
+        name="Integer"
+        class="au.com.zonski.config.xml.XMLIntegerConfigurer"/>
+    <Configurer
+        name="Byte"
+        class="au.com.zonski.config.xml.XMLByteConfigurer"/>
+    <Configurer
+        name="Fixed"
+        class="au.com.zonski.math.config.xml.XMLFixedConfigurer"/>
+    <!-- references -->
+    <Configurer
+        name="_ref"
+        class="au.com.zonski.config.xml.XMLReferenceConfigurer"/>
+    <!-- domain classes -->
+    <Configurer 
+        name="Vector" 
+        class="au.com.zonski.config.xml.XMLBeanConfigurer"
+        bean-class="java.util.Vector">
+        <Method name="addElement" config-name="Element">
+            <Parameter class="java.lang.Object"/>
+        </Method> 
+    </Configurer>
+    <Configurer
+        name="Composite"
+        class="au.com.zonski.config.xml.XMLBeanConfigurer"
+        bean-class="au.com.zonski.shape3d.Shape3dComposite">
+        <Method name="addShape" config-name="Shape">
+            <Parameter class="au.com.zonski.shape3d.Shape"/>
+        </Method>
+    </Configurer>
+    <Configurer
+        name="Mesh"
+        class="au.com.zonski.config.xml.XMLBeanConfigurer"
+        bean-class="au.com.zonski.shape3d.Shape3dMesh">
+        <Property name="color" config-name="color" mandatory="false" property-style="inline"/>
+        <Method name="addPoint" config-name="Point">
+            <Parameter class="au.com.zonski.shape3d.Point3d"/>
+        </Method>
+        <Method name="addFace" config-name="Face">
+            <Parameter class="au.com.zonski.shape3d.Face3d"/>
+        </Method>
+    </Configurer>
+    <Configurer
+        name="Point"
+        class="au.com.zonski.config.xml.XMLBeanConfigurer"
+        bean-class="au.com.zonski.shape3d.Point3d">
+        <Property name="x" config-name="x" property-style="inline" mandatory="true"/>
+        <Property name="y" config-name="y" property-style="inline" mandatory="true"/>
+        <Property name="z" config-name="z" property-style="inline" mandatory="true"/>
+    </Configurer>
+    <Configurer
+        name="AnimatedMesh"
+        class="au.com.zonski.config.xml.XMLBeanConfigurer"
+        bean-class="au.com.zonski.shape3d.Shape3dAnimatedMesh">
+        <Property name="color" config-name="color" mandatory="false" property-style="inline"/>
+        <Property name="animation" config-name="Animation" mandatory="true" property-style="open"/>
+        <Method name="addPoint" config-name="Point">
+            <Parameter class="au.com.zonski.shape3d.Point3d"/>
+        </Method>
+        <Method name="addFace" config-name="Face">
+            <Parameter class="au.com.zonski.shape3d.Face3d"/>
+        </Method>
+    </Configurer>
+    <Configurer
+        name="RotationAnimation"
+        class="au.com.zonski.config.xml.XMLBeanConfigurer"
+        bean-class="au.com.zonski.space.invaders.core.RotationAnimation">
+        <Method name="addAxis" config-name="Axis">
+            <Parameter class="int"/>
+        </Method>
+    </Configurer>
+    <Configurer
+        name="FlapAnimation"
+        class="au.com.zonski.config.xml.XMLBeanConfigurer"
+        bean-class="au.com.zonski.space.invaders.core.FlapAnimation">
+        <Property name="minRotationAngle" config-name="MinRotationAngle" mandatory="true" property-style="open"/>
+        <Property name="maxRotationAngle" config-name="MaxRotationAngle" mandatory="true" property-style="open"/>
+        <Property name="rotationIncrement" config-name="RotationIncrement" mandatory="true" property-style="open"/>
+    </Configurer>
+    <Configurer
+        name="Face"
+        class="au.com.zonski.config.xml.XMLBeanConfigurer"
+        bean-class="au.com.zonski.shape3d.Face3d">
+        <Method name="addIndex" config-name="Index">
+            <Parameter class="byte"/>
+        </Method>
+    </Configurer>
+    <Configurer
+        name="Ship"
+        class="au.com.zonski.config.xml.XMLBeanConfigurer"
+        bean-class="au.com.zonski.space.invaders.core.Ship">
+        <Property name="weapon" config-name="Weapon" mandatory="false" property-style="open"/>
+        <Property name="controller" config-name="Controller" mandatory="false" property-style="open"/>
+        <Property name="shape" config-name="Shape" mandatory="true" property-style="open"/>
+        <Property name="speed" config-name="Speed" mandatory="true" property-style="open"/>
+        <Property name="health" config-name="health" mandatory="true" property-style="inline"/>
+        <Property name="power" config-name="power" mandatory="false" property-style="inline"/>
+        <Property name="typeId" config-name="typeId" mandatory="true" property-style="inline"/>
+    </Configurer>
+    <Configurer
+        name="Weapon"
+        class="au.com.zonski.config.xml.XMLBeanConfigurer"
+        bean-class="au.com.zonski.space.invaders.core.Weapon">
+        <Property name="projectile" config-name="Projectile" mandatory="true" property-style="open"/>
+        <Property name="timeBetweenShots" config-name="TimeBetweenShots" mandatory="true" property-style="open"/>
+        <Property name="cost" config-name="cost" mandatory="true" property-style="inline"/>
+        <Property name="maxUpgrades" config-name="maxUpgrades" mandatory="true" property-style="inline"/>
+        <Property name="upgradeTypeId" config-name="upgradeTypeId" mandatory="true" property-style="inline"/>
+    </Configurer>
+    <Configurer
+        name="ScalingWeapon"
+        class="au.com.zonski.config.xml.XMLBeanConfigurer"
+        bean-class="au.com.zonski.space.invaders.core.ScalingWeapon">
+        <Property name="projectile" config-name="Projectile" mandatory="true" property-style="open"/>
+        <Property name="timeBetweenShots" config-name="TimeBetweenShots" mandatory="true" property-style="open"/>
+        <Property name="cost" config-name="cost" mandatory="true" property-style="inline"/>
+        <Property name="maxUpgrades" config-name="maxUpgrades" mandatory="true" property-style="inline"/>
+        <Property name="upgradeTypeId" config-name="upgradeTypeId" mandatory="true" property-style="inline"/>
+    </Configurer>
+    <Configurer
+        name="MultiWeapon"
+        class="au.com.zonski.config.xml.XMLBeanConfigurer"
+        bean-class="au.com.zonski.space.invaders.core.MultiWeapon">
+        <Property name="projectile" config-name="Projectile" mandatory="true" property-style="open"/>
+        <Property name="timeBetweenShots" config-name="TimeBetweenShots" mandatory="true" property-style="open"/>
+        <Property name="cost" config-name="cost" mandatory="true" property-style="inline"/>
+        <Property name="maxUpgrades" config-name="maxUpgrades" mandatory="true" property-style="inline"/>
+        <Property name="upgradeTypeId" config-name="upgradeTypeId" mandatory="true" property-style="inline"/>
+    </Configurer>
+    <Configurer
+        name="SpreadWeapon"
+        class="au.com.zonski.config.xml.XMLBeanConfigurer"
+        bean-class="au.com.zonski.space.invaders.core.SpreadWeapon">
+        <Property name="projectile" config-name="Projectile" mandatory="true" property-style="open"/>
+        <Property name="timeBetweenShots" config-name="TimeBetweenShots" mandatory="true" property-style="open"/>
+        <Property name="cost" config-name="cost" mandatory="true" property-style="inline"/>
+        <Property name="maxUpgrades" config-name="maxUpgrades" mandatory="true" property-style="inline"/>
+        <Property name="spreadAngle" config-name="SpreadAngle" mandatory="true" property-style="open"/>
+        <Property name="upgradeTypeId" config-name="upgradeTypeId" mandatory="true" property-style="inline"/>
+    </Configurer>
+    <Configurer
+        name="PlayerController"
+        class="au.com.zonski.config.xml.XMLBeanConfigurer"
+        bean-class="au.com.zonski.space.invaders.core.PlayerController">
+        <Method name="addLife" config-name="Life">
+            <Parameter class="au.com.zonski.space.domain.Body"/>
+        </Method>
+    </Configurer>
+    <Configurer
+        name="ProjectileController"
+        class="au.com.zonski.config.xml.XMLBeanConfigurer"
+        bean-class="au.com.zonski.space.invaders.core.ProjectileController">
+    </Configurer>
+    <Configurer
+        name="FragmentController"
+        class="au.com.zonski.config.xml.XMLBeanConfigurer"
+        bean-class="au.com.zonski.space.invaders.core.FragmentController">
+    </Configurer>
+    <Configurer
+        name="UpgradeController"
+        class="au.com.zonski.config.xml.XMLBeanConfigurer"
+        bean-class="au.com.zonski.space.invaders.core.UpgradeController">
+    </Configurer>
+    <Configurer
+        name="TwitController"
+        class="au.com.zonski.config.xml.XMLBeanConfigurer"
+        bean-class="au.com.zonski.space.invaders.core.TwitController">
+        <Property name="breakFormationChance"
+            config-name="breakFormationChance" mandatory="true" property-style="inline"/>
+    </Configurer>
+    <Configurer
+        name="BomberController"
+        class="au.com.zonski.config.xml.XMLBeanConfigurer"
+        bean-class="au.com.zonski.space.invaders.core.BomberController">
+        <Property name="breakFormationChance"
+            config-name="breakFormationChance" mandatory="true" property-style="inline"/>
+    </Configurer>
+    <Configurer
+        name="FighterController"
+        class="au.com.zonski.config.xml.XMLBeanConfigurer"
+        bean-class="au.com.zonski.space.invaders.core.FighterController">
+        <Property name="breakFormationChance"
+            config-name="breakFormationChance" mandatory="true" property-style="inline"/>
+    </Configurer>
+    <Configurer
+        name="ShooterController"
+        class="au.com.zonski.config.xml.XMLBeanConfigurer"
+        bean-class="au.com.zonski.space.invaders.core.ShooterController">
+    </Configurer>
+    <Configurer
+        name="TurretController"
+        class="au.com.zonski.config.xml.XMLBeanConfigurer"
+        bean-class="au.com.zonski.space.invaders.core.TurretController">
+        <Property name="breakFormationChance"
+            config-name="breakFormationChance" mandatory="true" property-style="inline"/>
+    </Configurer>
+    <Configurer
+        name="FormationController"
+        class="au.com.zonski.config.xml.XMLBeanConfigurer"
+        bean-class="au.com.zonski.space.invaders.core.FormationController">
+    </Configurer>
+    <Configurer
+        name="MissileController"
+        class="au.com.zonski.config.xml.XMLBeanConfigurer"
+        bean-class="au.com.zonski.space.invaders.core.MissileController">
+    </Configurer>
+    <Configurer
+        name="CircularFormation"
+        class="au.com.zonski.config.xml.XMLBeanConfigurer"
+        bean-class="au.com.zonski.space.invaders.core.CircularFormation">
+        <Property name="radius" config-name="Radius" mandatory="true" property-style="open"/>
+        <Property name="centerX" config-name="CenterX" mandatory="true" property-style="open"/>
+        <Property name="centerZ" config-name="CenterZ" mandatory="true" property-style="open"/>
+        <Property name="speed" config-name="Speed" mandatory="true" property-style="open"/>
+    </Configurer>
+    <Configurer
+        name="SquareFormation"
+        class="au.com.zonski.config.xml.XMLBeanConfigurer"
+        bean-class="au.com.zonski.space.invaders.core.SquareFormation">
+        <Property name="topZ" config-name="TopZ" mandatory="true" property-style="open"/>
+        <Property name="centerX" config-name="CenterX" mandatory="true" property-style="open"/>
+        <Property name="columns" config-name="columns" mandatory="true" property-style="inline"/>
+        <Property name="rowSpacing" config-name="RowSpacing" mandatory="true" property-style="open"/>
+        <Property name="columnSpacing" config-name="ColumnSpacing" mandatory="true" property-style="open"/>
+        <Property name="YRotation" config-name="YRotation" mandatory="true" property-style="open"/>
+    </Configurer>
+    <Configurer
+        name="CompositeFormation"
+        class="au.com.zonski.config.xml.XMLBeanConfigurer"
+        bean-class="au.com.zonski.space.invaders.core.CompositeFormationProxy">
+        <Method name="addFormation" config-name="Formation">
+            <Parameter class="au.com.zonski.space.invaders.core.Formation"/>
+            <Parameter class="int"/>
+        </Method>
+    </Configurer>
+    <Configurer
+        name="Game"
+        class="au.com.zonski.config.xml.XMLBeanConfigurer"
+        bean-class="au.com.zonski.space.invaders.core.Game">
+        <Property name="startLevelName" config-name="StartLevelName" mandatory="true" property-style="open"/>
+        <Property name="playerController" config-name="PlayerController" mandatory="true" property-style="open"/>
+        <Method name="setBody" config-name="Body">
+            <Parameter class="byte"/>
+            <Parameter class="au.com.zonski.space.domain.Body"/>
+        </Method>
+    </Configurer>
+    <Configurer
+        name="Level"
+        class="au.com.zonski.config.xml.XMLBeanConfigurer"
+        bean-class="au.com.zonski.space.invaders.core.Level">
+        <Property name="numSides" config-name="numberOfSides" mandatory="true" property-style="inline"/>
+        <Property name="nextLevelId" config-name="nextLevelId" mandatory="true" property-style="inline"/>
+        <Property name="name" config-name="name" mandatory="true" property-style="inline"/>
+        <Property name="height" config-name="Height" mandatory="true" property-style="open"/>
+        <Property name="width" config-name="Width" mandatory="true" property-style="open"/>
+        <Property name="formation" config-name="Formation" mandatory="true" property-style="open"/>
+        <Property name="maxActive" config-name="maxActive" mandatory="true" property-style="inline"/>
+        <Method name="addBody" config-name="Body">
+            <Parameter class="au.com.zonski.space.domain.Body"/>
+            <Parameter class="byte"/>
+            <Parameter class="int"/>
+            <Parameter class="int"/>
+            <Parameter class="int"/>
+            <Parameter class="int"/>
+        </Method>
+    </Configurer>
+</Index>

@@ -1,0 +1,87 @@
+<AnimatedMesh color="#FF00FF">
+    <Animation>
+        <RotationAnimation>
+            <Axis><Integer>-2</Integer></Axis>
+            <Axis><Integer>-2</Integer></Axis>
+            <Axis><Integer>-2</Integer></Axis>
+            <Axis><Integer>-2</Integer></Axis>
+        </RotationAnimation>
+    </Animation>
+    <Point> <!-- 0 -->
+        <Point x="0" y="0" z="80"/>
+    </Point>
+    <Point> <!-- 1 -->
+        <Point x="-40" y="0" z="0"/>
+    </Point>
+    <Point> <!-- 2 -->
+        <Point x="0" y="40" z="0"/>
+    </Point>
+    <Point> <!-- 3 -->
+        <Point x="40" y="0" z="0"/>
+    </Point>
+    <Point> <!-- 4 -->
+        <Point x="0" y="-40" z="0"/>
+    </Point>
+    <Point> <!-- 5 -->
+        <Point x="0" y="0" z="-80"/>
+    </Point>
+    <!--
+    <Face>
+        <Face>
+            <Index><Byte>2</Byte></Index>
+            <Index><Byte>1</Byte></Index>
+            <Index><Byte>0</Byte></Index>
+        </Face>
+    </Face>
+    <Face>
+        <Face>
+            <Index><Byte>3</Byte></Index>
+            <Index><Byte>2</Byte></Index>
+            <Index><Byte>0</Byte></Index>
+        </Face>
+    </Face>
+    <Face>
+        <Face>
+            <Index><Byte>4</Byte></Index>
+            <Index><Byte>3</Byte></Index>
+            <Index><Byte>0</Byte></Index>
+        </Face>
+    </Face>
+    <Face>
+        <Face>
+            <Index><Byte>1</Byte></Index>
+            <Index><Byte>4</Byte></Index>
+            <Index><Byte>0</Byte></Index>
+        </Face>
+    </Face>
+
+    <Face>
+        <Face>
+            <Index><Byte>5</Byte></Index>
+            <Index><Byte>1</Byte></Index>
+            <Index><Byte>2</Byte></Index>
+        </Face>
+    </Face>
+    <Face>
+        <Face>
+            <Index><Byte>5</Byte></Index>
+            <Index><Byte>2</Byte></Index>
+            <Index><Byte>3</Byte></Index>
+        </Face>
+    </Face>
+    <Face>
+        <Face>
+            <Index><Byte>5</Byte></Index>
+            <Index><Byte>3</Byte></Index>
+            <Index><Byte>4</Byte></Index>
+        </Face>
+    </Face>
+    <Face>
+        <Face>
+            <Index><Byte>5</Byte></Index>
+            <Index><Byte>4</Byte></Index>
+            <Index><Byte>1</Byte></Index>
+        </Face>
+    </Face>
+    -->
+</AnimatedMesh>

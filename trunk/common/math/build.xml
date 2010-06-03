@@ -1,0 +1,31 @@
+<project name="math-client" default="dist" basedir=".">
+    <description>build file for math classes usable by client</description>
+
+    <property file="build.external.properties"/>
+    <property file="build.internal.properties"/>
+    <property file="..\..\global.properties"/>
+
+    <target name="init">
+        <mkdir dir="${work.classes}"/>
+        <mkdir dir="${work.dist}"/>
+    </target>
+
+    <target name="clean">
+        <delete dir="${work.classes}"/>
+        <delete dir="${work.dist}"/>
+    </target>
+
+    <target name="compile" depends="init">
+        <javac srcdir="${src}" destdir="${work.classes}" debug="${debug}" debuglevel="${debug.level}">
+            <classpath>
+                <pathelement path="${mathfp.classpath}"/>
+            </classpath>
+        </javac>
+    </target>
+
+    <target name="dist" depends="compile">
+        <jar jarfile="${work.dist.jar}">
+            <fileset dir="${work.classes}"/>
+        </jar>
+    </target>
+</project>

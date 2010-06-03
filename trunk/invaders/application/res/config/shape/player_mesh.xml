@@ -1,0 +1,55 @@
+<Mesh color="#00FF00">
+
+    <Point> <!-- 0 -->
+        <Point x="0" y="15" z="75"/>
+    </Point>
+    <Point> <!-- 1 -->
+        <Point x="0" y="0" z="-75"/>
+    </Point>
+    <Point> <!-- 2 -->
+        <Point x="75" y="0" z="75"/>
+    </Point>
+    <Point> <!-- 3 -->
+        <Point x="-75" y="0" z="75"/>
+    </Point>
+    <Point> <!-- 4 -->
+        <Point x="0" y="-15" z="75"/>
+    </Point>
+
+    <Face>
+        <Face>
+            <Index><Byte>3</Byte></Index>
+            <Index><Byte>4</Byte></Index>
+            <Index><Byte>2</Byte></Index>
+            <Index><Byte>0</Byte></Index>
+        </Face>
+    </Face>
+    <Face>
+        <Face>
+            <Index><Byte>2</Byte></Index>
+            <Index><Byte>1</Byte></Index>
+            <Index><Byte>0</Byte></Index>
+        </Face>
+    </Face>
+    <Face>
+        <Face>
+            <Index><Byte>1</Byte></Index>
+            <Index><Byte>3</Byte></Index>
+            <Index><Byte>0</Byte></Index>
+        </Face>
+    </Face>
+    <Face>
+        <Face>
+            <Index><Byte>4</Byte></Index>
+            <Index><Byte>0</Byte></Index>
+            <Index><Byte>2</Byte></Index>
+        </Face>
+    </Face>
+    <Face>
+        <Face>
+            <Index><Byte>4</Byte></Index>
+            <Index><Byte>3</Byte></Index>
+            <Index><Byte>2</Byte></Index>
+        </Face>
+    </Face>
+</Mesh>

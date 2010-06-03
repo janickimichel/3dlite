@@ -1,0 +1,12 @@
+<Ship health="5" typeId="11">
+    <Speed><Fixed>25</Fixed></Speed>
+    <Shape>
+        <_ref map="shape.turret_mesh"/>
+    </Shape>
+    <Weapon>
+        <_ref map="weapon.missile_launcher"/>
+    </Weapon>
+    <Controller>
+        <_ref map="controller.turret"/>
+    </Controller>
+</Ship>

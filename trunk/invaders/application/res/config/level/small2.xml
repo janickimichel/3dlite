@@ -1,0 +1,56 @@
+<Level name="Orbit" numberOfSides="4" nextLevelId="level.small3" maxActive="2">
+    <Height><Fixed>5000</Fixed></Height>
+    <Width><Fixed>5000</Fixed></Width>
+    <Formation>
+        <CompositeFormation>
+            <Formation>
+                <SquareFormation columns="1">
+                    <TopZ><Fixed>-3000</Fixed></TopZ>
+                    <CenterX><Fixed>0</Fixed></CenterX>
+                    <RowSpacing><Fixed>0</Fixed></RowSpacing>
+                    <ColumnSpacing><Fixed>0</Fixed></ColumnSpacing>
+                    <YRotation><Fixed>180</Fixed></YRotation>
+                </SquareFormation>
+                <Integer>1</Integer>
+            </Formation>
+            <Formation>
+                <CircularFormation>
+                    <Speed><Fixed>2</Fixed></Speed>
+                    <CenterX><Fixed>0</Fixed></CenterX>
+                    <CenterZ><Fixed>-3000</Fixed></CenterZ>
+                    <Radius><Fixed>1000</Fixed></Radius>
+                </CircularFormation>
+                <Integer>12</Integer>
+            </Formation>
+        </CompositeFormation>
+    </Formation>
+
+    <Body>
+        <_ref map="laser_turret"/>
+        <Byte>2</Byte>
+        <Fixed>0</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+
+
+    <Body>
+        <_ref map="big_asteroid"/>
+        <Byte>3</Byte>
+        <Fixed>6000</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+
+    <Body>
+        <_ref map="big_asteroid"/>
+        <Byte>3</Byte>
+        <Fixed>-6000</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+
+</Level>
