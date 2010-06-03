@@ -1,0 +1,62 @@
+<Vector>
+    <Element>
+        <_ref map="big_asteroid"/>
+    </Element>
+    <Element>
+        <_ref map="big_saucer"/>
+    </Element>
+    <Element>
+        <_ref map="bird"/>
+    </Element>
+    <Element>
+        <_ref map="evil_player"/>
+    </Element>
+    <Element>
+        <_ref map="fragment"/>
+    </Element>
+    <Element>
+        <_ref map="laser_beam"/>
+    </Element>
+    <Element>
+        <_ref map="laser_turret"/>
+    </Element>
+    <Element>
+        <_ref map="medium_asteroid"/>
+    </Element>
+    <Element>
+        <_ref map="mining_laser_beam"/>
+    </Element>
+    <Element>
+        <_ref map="missile"/>
+    </Element>
+    <Element>
+        <_ref map="missile_turret"/>
+    </Element>
+    <Element>
+        <_ref map="player"/>
+    </Element>
+    <Element>
+        <_ref map="rookery"/>
+    </Element>
+    <Element>
+        <_ref map="saucer"/>
+    </Element>
+    <Element>
+        <_ref map="small_asteroid"/>
+    </Element>
+    <Element>
+        <_ref map="twin_laser_beam"/>
+    </Element>
+    <Element>
+        <_ref map="upgrade.laser_cannon"/>
+    </Element>
+    <Element>
+        <_ref map="upgrade.mining_laser_cannon"/>
+    </Element>
+    <Element>
+        <_ref map="upgrade.missile_launcher"/>
+    </Element>
+    <Element>
+        <_ref map="upgrade.twin_laser_cannon"/>
+    </Element>
+</Vector>

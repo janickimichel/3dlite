@@ -1,0 +1,29 @@
+<Ship health="1" typeId="12">
+    <Speed><Fixed>40</Fixed></Speed>
+    <Shape>
+        <_ref map="shape.player_mesh"/>
+    </Shape>
+    <Weapon>
+        <!--
+        <_ref map="weapon.shot_gun"/>
+        -->
+        <!--
+        <_ref map="weapon.twin_laser_cannon"/>
+        -->
+        <!--
+        <_ref map="weapon.capture_ray"/>
+        -->
+        <!--
+        <_ref map="weapon.bird_cannon"/>
+        -->
+        <!--
+        <_ref map="weapon.mining_laser_cannon"/>
+        -->
+
+        <_ref map="weapon.laser_cannon"/>
+
+        <!--
+        <_ref map="weapon.missile_launcher"/>
+        -->
+    </Weapon>
+</Ship>

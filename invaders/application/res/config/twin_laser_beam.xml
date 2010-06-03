@@ -1,0 +1,9 @@
+<Ship health="1" typeId="16">
+    <Speed><Fixed>100</Fixed></Speed>
+    <Shape>
+        <_ref map="shape.twin_laser_beam_mesh"/>
+    </Shape>
+    <Controller>
+        <_ref map="controller.projectile"/>
+    </Controller>
+</Ship>

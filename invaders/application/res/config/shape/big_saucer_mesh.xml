@@ -1,0 +1,249 @@
+<AnimatedMesh color="#FF0000">
+    <Animation>
+        <RotationAnimation>
+            <Axis><Integer>2</Integer></Axis>
+            <Axis><Integer>2</Integer></Axis>
+            <Axis><Integer>2</Integer></Axis>
+            <Axis><Integer>2</Integer></Axis>
+            <Axis><Integer>2</Integer></Axis>
+        </RotationAnimation>
+    </Animation>
+    <!-- top half -->
+    <Point> <!-- 0 -->
+        <Point x="0" y="60" z="0"/>
+    </Point>
+    <Point> <!-- 1 -->
+        <Point x="0" y="30" z="300"/>
+    </Point>
+    <Point> <!-- 2 -->
+        <Point x="210" y="30" z="210"/>
+    </Point>
+    <Point> <!-- 3 -->
+        <Point x="300" y="30" z="0"/>
+    </Point>
+    <Point> <!-- 4 -->
+        <Point x="210" y="30" z="-210"/>
+    </Point>
+    <Point> <!-- 5 -->
+        <Point x="0" y="30" z="-300"/>
+    </Point>
+    <Point> <!-- 6 -->
+        <Point x="-210" y="30" z="-210"/>
+    </Point>
+    <Point> <!-- 7 -->
+        <Point x="-300" y="30" z="0"/>
+    </Point>
+    <Point> <!-- 8 -->
+        <Point x="-210" y="30" z="210"/>
+    </Point>
+    <!-- bottom half -->
+    <Point> <!-- 9 -->
+        <Point x="0" y="-60" z="0"/>
+    </Point>
+    <Point> <!-- 10 -->
+        <Point x="0" y="-30" z="300"/>
+    </Point>
+    <Point> <!-- 11 -->
+        <Point x="210" y="-30" z="210"/>
+    </Point>
+    <Point> <!-- 12 -->
+        <Point x="300" y="-30" z="0"/>
+    </Point>
+    <Point> <!-- 13 -->
+        <Point x="210" y="-30" z="-210"/>
+    </Point>
+    <Point> <!-- 14 -->
+        <Point x="0" y="-30" z="-300"/>
+    </Point>
+    <Point> <!-- 15 -->
+        <Point x="-210" y="-30" z="-210"/>
+    </Point>
+    <Point> <!-- 16 -->
+        <Point x="-300" y="-30" z="0"/>
+    </Point>
+    <Point> <!-- 17 -->
+        <Point x="-210" y="-30" z="210"/>
+    </Point>
+
+    <!-- top half -->
+    <Face>
+        <Face>
+            <Index><Byte>0</Byte></Index>
+            <Index><Byte>1</Byte></Index>
+            <Index><Byte>2</Byte></Index>
+        </Face>
+    </Face>
+    <Face>
+        <Face>
+            <Index><Byte>0</Byte></Index>
+            <Index><Byte>2</Byte></Index>
+            <Index><Byte>3</Byte></Index>
+        </Face>
+    </Face>
+    <Face>
+        <Face>
+            <Index><Byte>0</Byte></Index>
+            <Index><Byte>3</Byte></Index>
+            <Index><Byte>4</Byte></Index>
+        </Face>
+    </Face>
+    <Face>
+        <Face>
+            <Index><Byte>0</Byte></Index>
+            <Index><Byte>4</Byte></Index>
+            <Index><Byte>5</Byte></Index>
+        </Face>
+    </Face>
+    <Face>
+        <Face>
+            <Index><Byte>0</Byte></Index>
+            <Index><Byte>5</Byte></Index>
+            <Index><Byte>6</Byte></Index>
+        </Face>
+    </Face>
+    <Face>
+        <Face>
+            <Index><Byte>0</Byte></Index>
+            <Index><Byte>6</Byte></Index>
+            <Index><Byte>7</Byte></Index>
+        </Face>
+    </Face>
+    <Face>
+        <Face>
+            <Index><Byte>0</Byte></Index>
+            <Index><Byte>7</Byte></Index>
+            <Index><Byte>8</Byte></Index>
+        </Face>
+    </Face>
+    <Face>
+        <Face>
+            <Index><Byte>0</Byte></Index>
+            <Index><Byte>8</Byte></Index>
+            <Index><Byte>1</Byte></Index>
+        </Face>
+    </Face>
+    <!-- bottom half -->
+    <Face>
+        <Face>
+            <Index><Byte>9</Byte></Index>
+            <Index><Byte>11</Byte></Index>
+            <Index><Byte>10</Byte></Index>
+        </Face>
+    </Face>
+    <Face>
+        <Face>
+            <Index><Byte>9</Byte></Index>
+            <Index><Byte>12</Byte></Index>
+            <Index><Byte>11</Byte></Index>
+        </Face>
+    </Face>
+    <Face>
+        <Face>
+            <Index><Byte>9</Byte></Index>
+            <Index><Byte>13</Byte></Index>
+            <Index><Byte>12</Byte></Index>
+        </Face>
+    </Face>
+    <Face>
+        <Face>
+            <Index><Byte>9</Byte></Index>
+            <Index><Byte>14</Byte></Index>
+            <Index><Byte>13</Byte></Index>
+        </Face>
+    </Face>
+    <Face>
+        <Face>
+            <Index><Byte>9</Byte></Index>
+            <Index><Byte>15</Byte></Index>
+            <Index><Byte>14</Byte></Index>
+        </Face>
+    </Face>
+    <Face>
+        <Face>
+            <Index><Byte>9</Byte></Index>
+            <Index><Byte>16</Byte></Index>
+            <Index><Byte>15</Byte></Index>
+        </Face>
+    </Face>
+    <Face>
+        <Face>
+            <Index><Byte>9</Byte></Index>
+            <Index><Byte>17</Byte></Index>
+            <Index><Byte>16</Byte></Index>
+        </Face>
+    </Face>
+    <Face>
+        <Face>
+            <Index><Byte>9</Byte></Index>
+            <Index><Byte>10</Byte></Index>
+            <Index><Byte>17</Byte></Index>
+        </Face>
+    </Face>
+    <!-- joining bits -->
+    <!--
+    <Face>
+        <Face>
+            <Index><Byte>10</Byte></Index>
+            <Index><Byte>11</Byte></Index>
+            <Index><Byte>2</Byte></Index>
+            <Index><Byte>1</Byte></Index>
+        </Face>
+    </Face>
+    <Face>
+        <Face>
+            <Index><Byte>11</Byte></Index>
+            <Index><Byte>12</Byte></Index>
+            <Index><Byte>3</Byte></Index>
+            <Index><Byte>2</Byte></Index>
+        </Face>
+    </Face>
+    <Face>
+        <Face>
+            <Index><Byte>12</Byte></Index>
+            <Index><Byte>13</Byte></Index>
+            <Index><Byte>4</Byte></Index>
+            <Index><Byte>3</Byte></Index>
+        </Face>
+    </Face>
+    <Face>
+        <Face>
+            <Index><Byte>13</Byte></Index>
+            <Index><Byte>14</Byte></Index>
+            <Index><Byte>5</Byte></Index>
+            <Index><Byte>4</Byte></Index>
+        </Face>
+    </Face>
+    <Face>
+        <Face>
+            <Index><Byte>14</Byte></Index>
+            <Index><Byte>15</Byte></Index>
+            <Index><Byte>6</Byte></Index>
+            <Index><Byte>5</Byte></Index>
+        </Face>
+    </Face>
+    <Face>
+        <Face>
+            <Index><Byte>15</Byte></Index>
+            <Index><Byte>16</Byte></Index>
+            <Index><Byte>7</Byte></Index>
+            <Index><Byte>6</Byte></Index>
+        </Face>
+    </Face>
+    <Face>
+        <Face>
+            <Index><Byte>16</Byte></Index>
+            <Index><Byte>17</Byte></Index>
+            <Index><Byte>8</Byte></Index>
+            <Index><Byte>7</Byte></Index>
+        </Face>
+    </Face>
+    <Face>
+        <Face>
+            <Index><Byte>17</Byte></Index>
+            <Index><Byte>10</Byte></Index>
+            <Index><Byte>1</Byte></Index>
+            <Index><Byte>8</Byte></Index>
+        </Face>
+    </Face>
+    -->
+</AnimatedMesh>

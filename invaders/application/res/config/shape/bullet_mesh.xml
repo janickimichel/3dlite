@@ -1,0 +1,28 @@
+<Mesh color="#FFFF00">
+
+    <Point> <!-- 0 -->
+        <Point x="-25" y="0" z="50"/>
+    </Point>
+    <Point> <!-- 1 -->
+        <Point x="0" y="0" z="-50"/>
+    </Point>
+    <Point> <!-- 2 -->
+        <Point x="25" y="0" z="50"/>
+    </Point>
+    <!--
+    <Face>
+        <Face>
+            <Index><Byte>0</Byte></Index>
+            <Index><Byte>1</Byte></Index>
+            <Index><Byte>2</Byte></Index>
+        </Face>
+    </Face>
+    <Face>
+        <Face>
+            <Index><Byte>2</Byte></Index>
+            <Index><Byte>1</Byte></Index>
+            <Index><Byte>0</Byte></Index>
+        </Face>
+    </Face>
+    -->
+</Mesh>

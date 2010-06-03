@@ -1,0 +1,11 @@
+<PlayerController>
+    <Life>
+        <_ref map="player"/>
+    </Life>
+    <Life>
+        <_ref map="player"/>
+    </Life>
+    <Life>
+        <_ref map="player"/>
+    </Life>
+</PlayerController>

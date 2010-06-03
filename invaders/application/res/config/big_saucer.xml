@@ -1,0 +1,12 @@
+<Ship health="15" power="190" typeId="17">
+    <Speed><Fixed>25</Fixed></Speed>
+    <Shape>
+        <_ref map="shape.big_saucer_mesh"/>
+    </Shape>
+    <Weapon>
+        <_ref map="weapon.twin_laser_cannon"/>
+    </Weapon>
+    <Controller>
+        <_ref map="controller.turret"/>
+    </Controller>
+</Ship>

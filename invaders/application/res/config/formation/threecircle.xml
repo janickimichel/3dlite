@@ -1,0 +1,41 @@
+<CompositeFormation>
+
+    <Formation>
+        <SquareFormation columns="1">
+            <TopZ><Fixed>-3800</Fixed></TopZ>
+            <CenterX><Fixed>0</Fixed></CenterX>
+            <RowSpacing><Fixed>0</Fixed></RowSpacing>
+            <ColumnSpacing><Fixed>0</Fixed></ColumnSpacing>
+            <YRotation><Fixed>180</Fixed></YRotation>
+        </SquareFormation>
+        <Integer>1</Integer>
+    </Formation>
+
+    <Formation>
+        <CircularFormation>
+            <Speed><Fixed>1</Fixed></Speed>
+            <CenterX><Fixed>0</Fixed></CenterX>
+            <CenterZ><Fixed>-3800</Fixed></CenterZ>
+            <Radius><Fixed>600</Fixed></Radius>
+        </CircularFormation>
+        <Integer>4</Integer>
+    </Formation>
+    <Formation>
+        <CircularFormation>
+            <Speed><Fixed>-1</Fixed></Speed>
+            <CenterX><Fixed>0</Fixed></CenterX>
+            <CenterZ><Fixed>-3800</Fixed></CenterZ>
+            <Radius><Fixed>1000</Fixed></Radius>
+        </CircularFormation>
+        <Integer>6</Integer>
+    </Formation>
+    <Formation>
+        <CircularFormation>
+            <Speed><Fixed>1</Fixed></Speed>
+            <CenterX><Fixed>0</Fixed></CenterX>
+            <CenterZ><Fixed>-3800</Fixed></CenterZ>
+            <Radius><Fixed>1400</Fixed></Radius>
+        </CircularFormation>
+        <Integer>1</Integer>
+    </Formation>
+</CompositeFormation>

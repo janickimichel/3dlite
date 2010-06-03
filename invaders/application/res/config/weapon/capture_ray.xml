@@ -1,0 +1,6 @@
+<Weapon maxUpgrades="0" cost="100" upgradeTypeId="-1">
+    <Projectile>
+        <_ref map="capture"/>
+    </Projectile>
+    <TimeBetweenShots><Fixed>100</Fixed></TimeBetweenShots>
+</Weapon>

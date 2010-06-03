@@ -1,0 +1,7 @@
+<SquareFormation columns="3">
+    <TopZ><Fixed>-3500</Fixed></TopZ>
+    <CenterX><Fixed>0</Fixed></CenterX>
+    <RowSpacing><Fixed>300</Fixed></RowSpacing>
+    <ColumnSpacing><Fixed>400</Fixed></ColumnSpacing>
+    <YRotation><Fixed>180</Fixed></YRotation>
+</SquareFormation>

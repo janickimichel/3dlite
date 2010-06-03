@@ -1,0 +1,29 @@
+<Game>
+    <!-- NOTE : order is significant, player must be first -->
+    <PlayerController>
+        <_ref map="controller.player"/>
+    </PlayerController>
+    <StartLevelName>
+        <String>level.small4</String>
+    </StartLevelName>
+    <Body>
+        <Byte>0</Byte>
+        <_ref map="fragment"/>
+    </Body>
+    <Body>
+        <Byte>1</Byte>
+        <_ref map="upgrade.laser_cannon"/>
+    </Body>
+    <Body>
+        <Byte>2</Byte>
+        <_ref map="upgrade.mining_laser_cannon"/>
+    </Body>
+    <Body>
+        <Byte>3</Byte>
+        <_ref map="upgrade.twin_laser_cannon"/>
+    </Body>
+    <Body>
+        <Byte>4</Byte>
+        <_ref map="upgrade.missile_launcher"/>
+    </Body>
+</Game>

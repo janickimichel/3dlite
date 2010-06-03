@@ -1,0 +1,12 @@
+<Ship health="25" typeId="13">
+    <Speed><Fixed>15</Fixed></Speed>
+    <Shape>
+        <_ref map="shape.rookery_mesh"/>
+    </Shape>
+    <Weapon>
+        <_ref map="weapon.bird_cannon"/>
+    </Weapon>
+    <Controller>
+        <_ref map="controller.shooter"/>
+    </Controller>
+</Ship>

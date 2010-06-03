@@ -1,0 +1,9 @@
+<Ship health="1" typeId="19">
+    <Speed><Fixed>100</Fixed></Speed>
+    <Shape>
+        <_ref map="shape.bullet_mesh"/>
+    </Shape>
+    <Controller>
+        <_ref map="controller.projectile"/>
+    </Controller>
+</Ship>

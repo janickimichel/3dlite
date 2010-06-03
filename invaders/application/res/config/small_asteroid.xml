@@ -1,0 +1,9 @@
+<Ship health="1" typeId="15">
+    <Speed><Fixed>40</Fixed></Speed>
+    <Shape>
+        <_ref map="shape.small_asteroid_mesh"/>
+    </Shape>
+    <Controller>
+        <_ref map="controller.formation"/>
+    </Controller>
+</Ship>

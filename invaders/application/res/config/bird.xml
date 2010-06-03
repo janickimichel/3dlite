@@ -1,0 +1,9 @@
+<Ship health="1" typeId="18">
+    <Speed><Fixed>60</Fixed></Speed>
+    <Shape>
+        <_ref map="shape.bird_mesh"/>
+    </Shape>
+    <Controller>
+        <_ref map="controller.bomber"/>
+    </Controller>
+</Ship>

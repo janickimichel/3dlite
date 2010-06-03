@@ -1,0 +1,7 @@
+<SpreadWeapon maxUpgrades="3" cost="5" upgradeTypeId="-1">
+    <Projectile>
+        <_ref map="missile"/>
+    </Projectile>
+    <TimeBetweenShots><Fixed>35</Fixed></TimeBetweenShots>
+    <SpreadAngle><Fixed>15</Fixed></SpreadAngle>
+</SpreadWeapon>

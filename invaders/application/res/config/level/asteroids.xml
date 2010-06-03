@@ -1,0 +1,267 @@
+<Level name="Asteroids" numberOfSides="4" nextLevelId="level.start" maxActive="2">
+    <Height><Fixed>5000</Fixed></Height>
+    <Width><Fixed>5000</Fixed></Width>
+    <Formation>
+        <CompositeFormation>
+            <Formation>
+                <SquareFormation columns="4">
+                    <TopZ><Fixed>-4500</Fixed></TopZ>
+                    <CenterX><Fixed>0</Fixed></CenterX>
+                    <RowSpacing><Fixed>300</Fixed></RowSpacing>
+                    <ColumnSpacing><Fixed>400</Fixed></ColumnSpacing>
+                    <YRotation><Fixed>180</Fixed></YRotation>
+                </SquareFormation>
+                <Integer>4</Integer>
+            </Formation>
+            <Formation>
+                <SquareFormation columns="5">
+                    <TopZ><Fixed>-3500</Fixed></TopZ>
+                    <CenterX><Fixed>0</Fixed></CenterX>
+                    <RowSpacing><Fixed>500</Fixed></RowSpacing>
+                    <ColumnSpacing><Fixed>500</Fixed></ColumnSpacing>
+                    <YRotation><Fixed>0</Fixed></YRotation>
+                </SquareFormation>
+                <Integer>100</Integer>
+            </Formation>
+
+        </CompositeFormation>
+    </Formation>
+    <Body>
+        <_ref map="laser_turret"/>
+        <Byte>2</Byte>
+        <Fixed>-300</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+    <Body>
+        <_ref map="laser_turret"/>
+        <Byte>2</Byte>
+        <Fixed>-300</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+    <Body>
+        <_ref map="laser_turret"/>
+        <Byte>2</Byte>
+        <Fixed>-300</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+    <Body>
+        <_ref map="laser_turret"/>
+        <Byte>2</Byte>
+        <Fixed>-300</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+
+    <Body>
+        <_ref map="medium_asteroid"/>
+        <Byte>3</Byte>
+        <Fixed>4000</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+    <Body>
+        <_ref map="small_asteroid"/>
+        <Byte>3</Byte>
+        <Fixed>-4000</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+    <Body>
+        <_ref map="medium_asteroid"/>
+        <Byte>3</Byte>
+        <Fixed>-4000</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+    <Body>
+        <_ref map="small_asteroid"/>
+        <Byte>3</Byte>
+        <Fixed>-4000</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+    <Body>
+        <_ref map="medium_asteroid"/>
+        <Byte>3</Byte>
+        <Fixed>-4000</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+
+    <Body>
+        <_ref map="big_asteroid"/>
+        <Byte>3</Byte>
+        <Fixed>4000</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+    <Body>
+        <_ref map="medium_asteroid"/>
+        <Byte>3</Byte>
+        <Fixed>-4000</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+    <Body>
+        <_ref map="medium_asteroid"/>
+        <Byte>3</Byte>
+        <Fixed>-4000</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+    <Body>
+        <_ref map="medium_asteroid"/>
+        <Byte>3</Byte>
+        <Fixed>-4000</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+    <Body>
+        <_ref map="big_asteroid"/>
+        <Byte>3</Byte>
+        <Fixed>4000</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+
+    <Body>
+        <_ref map="medium_asteroid"/>
+        <Byte>3</Byte>
+        <Fixed>-4000</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+    <Body>
+        <_ref map="big_asteroid"/>
+        <Byte>3</Byte>
+        <Fixed>4000</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+    <Body>
+        <_ref map="big_asteroid"/>
+        <Byte>3</Byte>
+        <Fixed>4000</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+    <Body>
+        <_ref map="big_asteroid"/>
+        <Byte>3</Byte>
+        <Fixed>4000</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+    <Body>
+        <_ref map="medium_asteroid"/>
+        <Byte>3</Byte>
+        <Fixed>-4000</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+
+    <Body>
+        <_ref map="small_asteroid"/>
+        <Byte>3</Byte>
+        <Fixed>-4000</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+    <Body>
+        <_ref map="big_asteroid"/>
+        <Byte>3</Byte>
+        <Fixed>4000</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+    <Body>
+        <_ref map="small_asteroid"/>
+        <Byte>3</Byte>
+        <Fixed>4000</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+    <Body>
+        <_ref map="big_asteroid"/>
+        <Byte>3</Byte>
+        <Fixed>4000</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+    <Body>
+        <_ref map="medium_asteroid"/>
+        <Byte>3</Byte>
+        <Fixed>-4000</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+
+    <Body>
+        <_ref map="small_asteroid"/>
+        <Byte>3</Byte>
+        <Fixed>-4000</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+    <Body>
+        <_ref map="small_asteroid"/>
+        <Byte>3</Byte>
+        <Fixed>4000</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+    <Body>
+        <_ref map="medium_asteroid"/>
+        <Byte>3</Byte>
+        <Fixed>4000</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+    <Body>
+        <_ref map="small_asteroid"/>
+        <Byte>3</Byte>
+        <Fixed>4000</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+    <Body>
+        <_ref map="medium_asteroid"/>
+        <Byte>3</Byte>
+        <Fixed>-4000</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+
+</Level>

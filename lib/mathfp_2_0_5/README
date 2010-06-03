@@ -1,0 +1,15 @@
+MATHFP VERSION 2.0.5
+
+Now providing 64bit fixed point integer math.
+
+PDB AND PRC FILES
+
+MathFP_CLDC.pdb	64bit math library for CLDC (package net.jscience.math)
+MathFP_KVM.pdb	32bit math library for KVM (package net.jscience.math.kvm)
+MathFP_OLD.pdb	32bit math library for KVM (package net.jscience.util) deprecated
+
+CldcFP.prc Palm J2ME test program
+WabaFP.prc Palm WABA test program
+WabaFP.pdb Palm library needed by WabaFP.prc
+WabaFP.lnk Windows CE test program shortcut
+WabaFP.wrp Windows CE test program

@@ -1,0 +1,72 @@
+<Composite>
+    <Shape>
+        <Mesh color="#00FFFF">
+
+            <Point> <!-- 0 -->
+                <Point x="15" y="-2" z="40"/>
+            </Point>
+            <Point> <!-- 1 -->
+                <Point x="15" y="-2" z="-40"/>
+            </Point>
+            <Point> <!-- 2 -->
+                <Point x="20" y="2" z="-45"/>
+            </Point>
+            <Point> <!-- 3 -->
+                <Point x="20" y="2" z="45"/>
+            </Point>
+            <!--
+            <Face>
+                <Face>
+                    <Index><Byte>0</Byte></Index>
+                    <Index><Byte>1</Byte></Index>
+                    <Index><Byte>2</Byte></Index>
+                    <Index><Byte>3</Byte></Index>
+                </Face>
+            </Face>
+            <Face>
+                <Face>
+                    <Index><Byte>3</Byte></Index>
+                    <Index><Byte>2</Byte></Index>
+                    <Index><Byte>1</Byte></Index>
+                    <Index><Byte>0</Byte></Index>
+                </Face>
+            </Face>
+            -->
+        </Mesh>
+    </Shape>
+    <Shape>
+        <Mesh color="#00FFFF">
+
+            <Point> <!-- 0 -->
+                <Point x="-20" y="2" z="45"/>
+            </Point>
+            <Point> <!-- 1 -->
+                <Point x="-20" y="2" z="-45"/>
+            </Point>
+            <Point> <!-- 2 -->
+                <Point x="-15" y="-2" z="-40"/>
+            </Point>
+            <Point> <!-- 3 -->
+                <Point x="-15" y="-2" z="40"/>
+            </Point>
+            <!--
+            <Face>
+                <Face>
+                    <Index><Byte>0</Byte></Index>
+                    <Index><Byte>1</Byte></Index>
+                    <Index><Byte>2</Byte></Index>
+                    <Index><Byte>3</Byte></Index>
+                </Face>
+            </Face>
+            <Face>
+                <Face>
+                    <Index><Byte>3</Byte></Index>
+                    <Index><Byte>2</Byte></Index>
+                    <Index><Byte>1</Byte></Index>
+                    <Index><Byte>0</Byte></Index>
+                </Face>
+            </Face>
+            -->
+        </Mesh>
+    </Shape>
+</Composite>

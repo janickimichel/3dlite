@@ -1,0 +1,12 @@
+<Ship health="1" typeId="2">
+    <Speed><Fixed>50</Fixed></Speed>
+    <Shape>
+        <_ref map="shape.mining_laser_cannon_upgrade_mesh"/>
+    </Shape>
+    <Weapon>
+        <_ref map="weapon.mining_laser_cannon"/>
+    </Weapon>
+    <Controller>
+        <_ref map="controller.upgrade"/>
+    </Controller>
+</Ship>

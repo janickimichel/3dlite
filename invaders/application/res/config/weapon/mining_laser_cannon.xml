@@ -1,0 +1,6 @@
+<MultiWeapon maxUpgrades="2" cost="2" upgradeTypeId="2">
+    <Projectile>
+        <_ref map="mining_laser_beam"/>
+    </Projectile>
+    <TimeBetweenShots><Fixed>35</Fixed></TimeBetweenShots>
+</MultiWeapon>

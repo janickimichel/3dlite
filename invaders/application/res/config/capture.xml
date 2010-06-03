@@ -1,0 +1,9 @@
+<Ship health="1" power="0" typeId="20">
+    <Speed><Fixed>60</Fixed></Speed>
+    <Shape>
+        <_ref map="shape.capture_mesh"/>
+    </Shape>
+    <Controller>
+        <_ref map="controller.projectile"/>
+    </Controller>
+</Ship>

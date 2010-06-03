@@ -1,0 +1,6 @@
+<ScalingWeapon maxUpgrades="7" cost="2" upgradeTypeId="3">
+    <Projectile>
+        <_ref map="twin_laser_beam"/>
+    </Projectile>
+    <TimeBetweenShots><Fixed>20</Fixed></TimeBetweenShots>
+</ScalingWeapon>

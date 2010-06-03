@@ -1,0 +1,41 @@
+<Level name="Small" numberOfSides="3" nextLevelId="level.small2" maxActive="2">
+    <Height><Fixed>5000</Fixed></Height>
+    <Width><Fixed>5000</Fixed></Width>
+    <Formation>
+        <SquareFormation columns="3">
+            <TopZ><Fixed>-3500</Fixed></TopZ>
+            <CenterX><Fixed>0</Fixed></CenterX>
+            <RowSpacing><Fixed>1000</Fixed></RowSpacing>
+            <ColumnSpacing><Fixed>1000</Fixed></ColumnSpacing>
+            <YRotation><Fixed>180</Fixed></YRotation>
+        </SquareFormation>
+    </Formation>
+
+    <Body>
+        <_ref map="bird"/>
+        <Byte>2</Byte>
+        <Fixed>-1000</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+
+    <Body>
+        <_ref map="evil_player"/>
+        <Byte>2</Byte>
+        <Fixed>0</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+
+    <Body>
+        <_ref map="bird"/>
+        <Byte>2</Byte>
+        <Fixed>1000</Fixed>
+        <Fixed>0</Fixed>
+        <Fixed>-6000</Fixed>
+        <Fixed>180</Fixed>
+    </Body>
+
+</Level>
